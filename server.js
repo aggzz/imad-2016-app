@@ -26,7 +26,7 @@ app.get("/fun.html", function(req,res){
 });
 
 app.get('/ui/sas.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'sas.jpg'));
 });
 
 var counter=0;
