@@ -25,6 +25,10 @@ app.get("/fun.html", function(req,res){
     res.sendFile(path.join(__dirname,"ui", 'fun.html'));    
 });
 
+app.get('/ui/sas.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
 var counter=0;
 app.get('/counter', function(req,res){
     counter= counter+1;
