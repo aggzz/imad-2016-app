@@ -29,9 +29,15 @@ app.get("/fac.html", function(req,res){
     res.sendFile(path.join(__dirname,"ui", 'fac.html'));    
 });
 
-app.get('/ui/sas.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, "ui", 'sas.jpg'));
+app.get('sass.png', function (req, res) {
+  res.sendFile(path.join(__dirname, "ui", 'sass'));
 });
+
+app.get('cl.png', function (req, res) {
+  res.sendFile(path.join(__dirname, "ui", 'cl.png'));
+});
+
+
 
 var counter=0;
 app.get('/counter', function(req,res){
