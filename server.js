@@ -29,11 +29,11 @@ app.get("/fac.html", function(req,res){
     res.sendFile(path.join(__dirname,"ui", 'fac.html'));    
 });
 
-app.get('sass.png', function (req, res) {
+app.get('/sass.png', function (req, res) {
   res.sendFile(path.join(__dirname, "ui", 'sass'));
 });
 
-app.get('cl.png', function (req, res) {
+app.get('/cl.png', function (req, res) {
   res.sendFile(path.join(__dirname, "ui", 'cl.png'));
 });
 
