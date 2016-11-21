@@ -25,8 +25,8 @@ app.get("/fun.html", function(req,res){
     res.sendFile(path.join(__dirname,"ui", 'fun.html'));    
 });
 
-app.get("/fact.html", function(req,res){
-    res.sendFile(path.join(__dirname,"ui", 'fact.html'));    
+app.get("/fac.html", function(req,res){
+    res.sendFile(path.join(__dirname,"ui", 'fac.html'));    
 });
 
 app.get('/ui/sas.jpg', function (req, res) {
