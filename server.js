@@ -30,11 +30,11 @@ app.get("/fac.html", function(req,res){
 });
 
 app.get('/sass.png', function (req, res) {
-  res.sendFile(path.join(__dirname, "ui", 'sass'));
+  res.sendFile(path.join(__dirname, 'sass'));
 });
 
 app.get('/cl.png', function (req, res) {
-  res.sendFile(path.join(__dirname, "ui", 'cl.png'));
+  res.sendFile(path.join(__dirname, 'cl.png'));
 });
 
 
