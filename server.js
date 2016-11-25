@@ -1,10 +1,11 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
-var app = express();
-app.use(morgan('combined'));
 var Pool = require('pg').Pool;
+var crypto = require('crypto');
+var bodyParser = require('body-parser');
+var session = require('express-session');
+
 var config = {
   host: 'db.imad.hasura-app.io',
   user: 'aggzz',
@@ -12,6 +13,18 @@ var config = {
   database: 'aggzz',
   port: '5432',
 };
+
+var app = express();
+app.use(morgan('combined'));
+app.use(bodyParser.json());
+app.use(session({
+    secret: 'someRandomSecretValue',
+    cookie: {maxAge: 1000 * 60 * 60 * 24 * 30}
+}));
+
+function createTemplate(data){
+    
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
