@@ -2,34 +2,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sastra Academy</title>
+  <title>Sastra Academy- Btech Tutions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
- </head>
-<body>
- 
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      
+    }
     
+    
+    .carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    background-color: #f1f1f1;
+}
 
-    <div class="col-sm-8 text-left">
-      <h1>Sastra Academy</h1>
-      <p>The institute, over the years has substantially grown in academic programmes, infrastructural facilities and attracted academician of proven competence onto its faculty. It gained amongst academic circles as one of the premier technical institutes in this region and the academic departments are accreditated by the National Board of Accreditation (NBA), New Delhi.</p>
-      <hr>
-      <h3>Our Mission </h3>
-      <p>To evolve into a premier technological and research institution, moulding eminent professionals with creative minds, innovative ideas and sound practical skill, and to shape a future where technology works for the enrichment of mankind.</p>
-       <h3>Our Vission </h3>
-      <p> To impart state-of-the-art knowledge to individuals in various technological disciplines and to inculcate in them a high degree of social consciousness and human values, thereby enabling them to face the challenges of life with courage and conviction.</p>
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    .jumbotron{
+        background-color: #F8F8FF;
+        height: 100%
+    }
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 30px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    #googleMap {
+    width: 100%; /* Span the entire width of the screen */
+    height: 400px; /* Set the height to 400 pixels */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); /* Change the color of the map to black and white * /
+}
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+  </head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://aggzz.imad.hasura-app.io">Home</a></li>
+        <li><a href="http://aggzz.imad.hasura-app.io/articleone">About</a></li>
+        <li><a href="http://aggzz.imad.hasura-app.io/fac.html">Faculty</a></li>
+        <li><a href="http://aggzz.imad.hasura-app.io/fun.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://aggzz.imad.hasura-app.io/log.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  
+
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h2><a href="http://aggzz.imad.hasura-app.io/">Home</a></h2>
+      <br> 
+      <h2><a href="http://aggzz.imad.hasura-app.io/articleone">About</a></h2>
+      <br>
+      <h2><a href="http://aggzz.imad.hasura-app.io/fac.html">Faculty</a></h2>
+      <br>
+      <h2><a href="http://aggzz.imad.hasura-app.io/fun.html">Contact</a></h2>
+      <br>
     </div>
     
+ </div>
+    
+  
+ 
+<hr>
+<br>
+<div class="container">
+  <h3 class="text-center">Leave us a comment</h3>
+  <div class="row test">
+    <div class="col-md-4">
+      <h3> Contact</h3>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Kottaramattom, Palai</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 986776677</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: sastra@mail.com</p> 
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+<hr/>
+
+<div id="googleMap"></div>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(9.709177, 76.674574);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>www.sastra.com</p>
 </footer>
 
 </body>
-    
 </html>
