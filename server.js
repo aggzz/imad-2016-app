@@ -53,8 +53,9 @@ app.get("/fun.html", function(req,res){
     res.sendFile(path.join(__dirname,"ui", 'fun.html'));    
 });
 
-app.get("/fac.html", function(req,res){
-    res.sendFile(path.join(__dirname,"ui", 'fac.html'));    
+
+app.get("/log.html", function(req,res){
+    res.sendFile(path.join(__dirname, 'log.html'));    
 });
 
 app.get('/sass.png', function (req, res) {
